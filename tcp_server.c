@@ -22,7 +22,7 @@ int main()
     //bind the socket to our specified IP and Port
     bind(server_socket, (struct sockaddr *) &server_address, sizeof(server_address));
     
-    listen(server_socket, 5);
+                                        listen(server_socket, 5);
     
     int client_socket;
     client_socket = accept(server_socket,0,0);
